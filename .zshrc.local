@@ -1,0 +1,14 @@
+# Tmux config
+if [ -z "$TMUX" ] && [ -n "$SSH_TTY" ] && [[ $- =~ i ]]; then                                   
+  ▏ tmux attach-session -t ssh || tmux new-session -s ssh                                       
+  ▏ exit                                                                                        
+fi
+
+# Custom Plugins
+source '/usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh'
+source ~/.powerlevel10k/powerlevel10k.zsh-theme
+source /usr/share/doc/fzf/examples/key-bindings.zsh
+source /usr/share/zsh/vendor-completions/_fzf
+
+# Custom paths
+export PATH="${PATH}:${HOME}/.local/bin/"
