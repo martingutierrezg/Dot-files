@@ -5,6 +5,9 @@
 # Uses fzf, zsh-completions, zsh-autosuggestions, and the powerlevel10k zsh theme.
 # To convert bash_history to the zsh equivalent see: https://gist.github.com/muendelezaji/c14722ab66b505a49861b8a74e52b274
 
+# Use like:
+# git init . && git remote add origin https://github.com/martingutierrezg/Dot-files.git && git pull origin master && chmod +x ./debian_install_zsh.sh && ./debian_install_zsh.sh
+
 # Install zsh
 sudo apt install zsh
 
